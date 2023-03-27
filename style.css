@@ -1,0 +1,57 @@
+.bg-custom {
+    background-color: #f6ddd7;   
+    color: #703b2f;
+    font-family:courier;
+    
+}
+
+.text-brown {
+    color: brown;
+}
+
+.background-image {
+    font-family:courier;
+    color: #945445;
+    padding-top: 1em;
+    height: 400px;
+    background-image: url(./Image/img2.png);
+    background-size: cover;
+}
+
+.text-custom {
+    background-color: #f3cfc6;
+    color: #703b2f;
+    
+}
+
+
+#about {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 1em;
+    padding-bottom: 7em;
+}
+
+
+#persona img {
+    height: 120px;
+    
+}
+.background {
+    color: #945445;
+    padding-top: 4em;
+    height: 400px;
+    background-image: url(./Image/img9.png);
+    background-size:cover;
+}
+
+.btn {
+    color: #703b2f;
+
+}
+
+.Contact {
+    font-weight: bolder;
+    background-color: #ab7063;   
+    color: #ffdcd2;
+    font-family:courier;
+}
