@@ -1,6 +1,6 @@
 <?php
 $connection = mysqli_connect("localhost","root","");
-$db = mysqli_select_db($connection, 'contact_db');
+$db = mysqli_select_db($connection, 'usa_arbolado');
 
 
 if(isset($_POST['submit']))

@@ -41,7 +41,7 @@
            $servername = "localhost";
            $username = "root";
            $password = "";
-           $database = "contact_db";   
+           $database = "usa_arbolado";   
 
             // Create connection
             $connection = new mysqli($servername, $username, $password, $database);
@@ -70,10 +70,8 @@
 
                  
                      <td>
-                                <form action="delete.php" method="post">
-                                    <input type="hidden" name="id" value="<?php echo $rows['id']?>">
-                                    <input type="submit" name="delete" class="btn btn-outline-danger btn-sm" value="DELETE">
-                                </form>
+                     <a class='btn btn-outline-danger btn-sm' href=' /contactt_db/edit.php?id=$row[id]'>Edit</a>
+                  <a class='btn btn-outline-danger btn-sm' href='/contact_db/delete.php?id=$rows[id]'>Delete</a>
                             </td>
                   
                </tr>
