@@ -15,7 +15,7 @@
 
    <link rel="stylesheet" href="css/font-awesome.min.css">
    <link rel="stylesheet" href="css/bootstrap.min.css">
-   <link rel="stylesheet" href="mysql/localhost/contact_db/contact">
+   <link rel="stylesheet" href="mysql/localhost/usa_arbolado/contact">
    <link rel="stylesheet" href="index.php">
    <link rel="stylesheet" href="delete.php">
 
