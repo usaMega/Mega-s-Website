@@ -70,8 +70,8 @@
 
                  
                      <td>
-                     <a class='btn btn-outline-danger btn-sm' href=' /contactt_db/edit.php?id=$row[id]'>Edit</a>
-                  <a class='btn btn-outline-danger btn-sm' href='/contact_db/delete.php?id=$rows[id]'>Delete</a>
+                     <a class='btn btn-outline-danger btn-sm' href="edit.php?id=<?=$rows['id'];?>">Edit</a>
+                  <a class='btn btn-outline-danger btn-sm' href="delete.php?id=<?=$rows['id'];?>">Delete</a>
                             </td>
                   
                </tr>

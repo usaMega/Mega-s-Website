@@ -1,23 +1,24 @@
-<?php
-$connection = mysqli_connect("localhost","root","");
-$db = mysqli_select_db($connection, 'usa_arbolado');
+<?php 
 
-if(isset($_POST['delete']))
-{
-    $id = $_POST['id'];
-
-    $query = "DELETE FROM feedback WHERE id='$id' ";
-    $query_run = mysqli_query($connection, $query);
-
-    if($query_run)
-    {
-        echo '<script> alert("Data Deleted"); </script>';
-        header("location:Table/table.php");
-    }
-    else
-    {
-        echo '<script> alert("Data Not Deleted"); </script>';
-    }
+if (isset($_GET['id'])){
+    include "../connect.php";
+    function validate ($data){
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+            return $data;
 }
+ $id = validate($_GET['id']);
 
-?>
+ $sql = "DELETE FROM contact
+              WHERE id='$id'";
+$result = mysqli_query($connection, $sql);
+if ($result) {
+    header("Location: ../Table/table.php?success=successfuly deleted");
+}else{
+    header("Location: ../Table/table.php?serror=unknown error&$contents_data");
+}
+}
+else{
+    header("Location: ./Table/table.php");
+}
