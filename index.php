@@ -44,7 +44,7 @@
          <div class="Contact py-2">
          <div class="container">
             <h1>Contact Me</h1>
-            <form action ="" method ="POST">
+            <form action ="insert.php" method ="POST">
             <div class="modal-body">
                <div class="mb-3">
                   <label for="email" class="form-label">Email address</label>

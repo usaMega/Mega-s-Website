@@ -1,24 +1,23 @@
-<?php 
+<?php
+require_once("connect.php");
 
-if (isset($_GET['id'])){
-    include "../connect.php";
-    function validate ($data){
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-            return $data;
-}
- $id = validate($_GET['id']);
+if(isset($_GET['id']))
+{
+    $id = $_GET['id'];
 
- $sql = "DELETE FROM contact
-              WHERE id='$id'";
-$result = mysqli_query($connection, $sql);
-if ($result) {
-    header("Location: ../Table/table.php?success=successfuly deleted");
-}else{
-    header("Location: ../Table/table.php?serror=unknown error&$contents_data");
+    $query= "DELETE FROM contact WHERE id='$id' ";
+    $query_run = mysqli_query($connection,  $query);
+
+    if($query_run)
+    {
+        echo '<script> alert("Data Deleted"); </script>';
+        header('location: ./Table/table.php');
+    }
+    else
+    {
+        echo '<script> alert("Data Not Deleted"); </script>';
+        header('location: ./Table/table.php');
+    }
 }
-}
-else{
-    header("Location: ./Table/table.php");
-}
+
+?> 
