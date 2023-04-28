@@ -1,6 +1,7 @@
 <?php
 require_once("connect.php");
 
+<<<<<<< HEAD
 if(isset($_GET['id']))
 {
     $id = $_GET['id'];
@@ -21,3 +22,10 @@ if(isset($_GET['id']))
 }
 
 ?> 
+=======
+$id = $_GET['id'];
+echo $id;
+
+// Uncomment this to redirect back to tables
+// header("Location:Table/table.php");
+>>>>>>> e8414c733bfc6a416e3250683846c990f3e81bf6
